@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #953dc9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: #3f7b3f
+        }
+        a:hover{
+            color: #522429;
+        }
+        a:active{
+            color: #2320e0
+        }
+/* Lembrando que pseudo-classes são usados para estados  de elementos dentro do HTML*/
+/*Pseudo elementos podem ser usados para qualquer classe, id, elementos - utilizamos :: */
+        /* 
+            Resumo 
+                # = id
+                . = class
+                : = pseudo.class
+                :: = pseudo-element
+                > = Children
+        */
+        a::after{
+            content:'[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: #a9a9a9;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="blank">Site do CursoemVideo</a></li>
+    </ul>
+    
+</body>
+</html>

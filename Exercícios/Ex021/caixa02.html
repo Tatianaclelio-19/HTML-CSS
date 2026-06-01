@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #696969;
+        margin: 0px;
+    }
+
+    header{
+        background-color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+    }
+    h1{
+        box-shadow: inset 2px 2px 4px 1px #0000007e;
+    }
+    nav{
+        background-color: #666666;
+        padding: 3px;
+        box-shadow: 2px 2px 4px 1px #0000007e;
+    }
+
+   nav > a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 30px;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+    }
+
+    main{
+        background-color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 20px 30px 40px;
+    }
+    article{
+        background-color: #d3d3d3;
+        padding: 5px;
+    }
+
+    article > aside{
+        background-color: #a5a5a5;      
+    }
+    footer{
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+    }
+   div#bola{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 50%; /*Podemos usar percentagem em corder radius. No caso para conseguirmos um bola temos que usar 50% */
+   }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Titulo do Artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repudiandae odio explicabo mollitia. Quis, iusto. Facere ab illum a, magni quaerat labore voluptatum, optio soluta sequi harum eius? Mollitia, ex!</p>
+                <aside>
+                    <p>Artigo ilustrativo.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>Desenvolvido durante formação CursoemVideo
+        <div id="bola"></div>
+    </footer>  
+</body>
+</html>
